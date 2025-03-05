@@ -2,3 +2,4 @@
 *.bat
 *.html
 *.json
+!MySQL_CVS.sql
