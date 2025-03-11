@@ -47,9 +47,9 @@ function generate_json(size, stream) {
         const password = random_text(random_number(8, 16));
 
         if(stream) {
-            _stream.write(`{ "matricula": "${matricula}", "año": ${año}, "nombre": "${nombre}", "apellidos": "${apellidos}", "password": "${password}"}\n`);
+            _stream.write(`{ "matricula": "${matricula}", "año": "${año}", "nombre": "${nombre}", "apellidos": "${apellidos}", "password": "${password}"}\n`);
         } else {
-            json += `{ "matricula": "${matricula}", "año": ${año}, "nombre": "${nombre}", "apellidos": "${apellidos}", "password": "${password}"}\n`        
+            json += `{ "matricula": "${matricula}", "año": "${año}", "nombre": "${nombre}", "apellidos": "${apellidos}", "password": "${password}"}\n`        
         }
     }
 
