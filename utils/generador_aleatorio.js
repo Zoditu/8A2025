@@ -38,7 +38,7 @@ function generate_csv(size) {
  */
 function generate_json(size, stream) {
     let json = "";
-    let _stream = stream ? FileStream.createWriteStream('alumnos_random.json', {flags: 'w'}) : null;
+    let _stream = stream ? FileStream.createWriteStream(stream, {flags: 'w'}) : null;
     for (let i = 0; i < size; i++) {
         const matricula = Math.random().toFixed(7).toString().replace('.', '');
         const año = Math.random().toFixed(3).toString().replace('.', '');
